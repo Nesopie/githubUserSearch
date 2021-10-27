@@ -15,6 +15,7 @@ const Introduction = (props) => {
                 <div id="profileHandle">{props.profileHandle}</div>
                 <div id="dateOfJoin">{props.dateOfJoin}</div>
             </div>
+            <div id="dateOfJoinDesktop">{props.dateOfJoin}</div>
         </div>
     );
 }
@@ -46,7 +47,7 @@ const About = (props)  => {
                 <div className="data">{props.followers}</div>
             </div>
             <div className="aboutInner">
-                <div className="inneritle">Following</div>
+                <div className="innerTitle">Following</div>
                 <div className="data">{props.following}</div>
             </div>
         </div>
@@ -87,25 +88,30 @@ const Details = (props) => {
 
 const Card = (props) => {
     return(
-        <div className="card">
-            <Introduction
-                imgUrl={props.imgUrl}
-                profileName={props.profileName}
-                profileHandle={props.profileHandle}
-                dateOfJoin={props.dateOfJoin}
-            />
-            <Description desc={props.desc} bio={props.bio}/>
-            <About
-                repoData={props.repoData}
-                followers={props.followers}
-                following={props.following}
-            />
-            <Details
-                location={props.location}
-                blog={props.blog}
-                twitter={props.twitterHandle}
-                company={props.company}
-            />
+        <div className="cardContainer">
+            <div className="desktopProfilePicture">
+                <img src={props.imgUrl} alt="profile pic"/>
+            </div>
+            <div className="card">
+                <Introduction
+                    imgUrl={props.imgUrl}
+                    profileName={props.profileName}
+                    profileHandle={props.profileHandle}
+                    dateOfJoin={props.dateOfJoin}
+                />
+                <Description desc={props.desc} bio={props.bio}/>
+                <About
+                    repoData={props.repoData}
+                    followers={props.followers}
+                    following={props.following}
+                />
+                <Details
+                    location={props.location}
+                    blog={props.blog}
+                    twitter={props.twitterHandle}
+                    company={props.company}
+                />
+            </div>
         </div>
     );
 }

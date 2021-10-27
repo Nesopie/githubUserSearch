@@ -43,8 +43,6 @@ function App() {
         form.reset();
     }
 
-
-
     return(
         <div className="container">
             <Header/>
@@ -56,7 +54,6 @@ function App() {
                 profileName={userData.name}
                 profileHandle={'@' + userData.login}
                 imgUrl={userData.avatar_url}
-                // dateOfJoin={userData.created_at}
                 dateOfJoin={`Joined ${DateTime.fromISO(userData.created_at).toLocaleString(DateTime.DATE_MED)}`}
                 bio={userData.bio}
                 repoData={userData.public_repos}
