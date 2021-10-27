@@ -168,7 +168,7 @@ button:hover {
     gap: 10px;
 }
 
-.desktopProfilePicture, #dateOfJoinDesktop, {
+.desktopProfilePicture, #dateOfJoinDesktop {
     display: none;
 }
 
