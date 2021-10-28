@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/githubUserSearch/static/css/main.ce8f33fd.chunk.css",
+    "main.css": "/githubUserSearch/static/css/main.34b520f7.chunk.css",
     "main.js": "/githubUserSearch/static/js/main.07347733.chunk.js",
     "main.js.map": "/githubUserSearch/static/js/main.07347733.chunk.js.map",
     "runtime-main.js": "/githubUserSearch/static/js/runtime-main.ee4b813c.js",
@@ -8,7 +8,7 @@
     "static/js/2.39a80194.chunk.js": "/githubUserSearch/static/js/2.39a80194.chunk.js",
     "static/js/2.39a80194.chunk.js.map": "/githubUserSearch/static/js/2.39a80194.chunk.js.map",
     "index.html": "/githubUserSearch/index.html",
-    "static/css/main.ce8f33fd.chunk.css.map": "/githubUserSearch/static/css/main.ce8f33fd.chunk.css.map",
+    "static/css/main.34b520f7.chunk.css.map": "/githubUserSearch/static/css/main.34b520f7.chunk.css.map",
     "static/js/2.39a80194.chunk.js.LICENSE.txt": "/githubUserSearch/static/js/2.39a80194.chunk.js.LICENSE.txt",
     "static/media/index.css": "/githubUserSearch/static/media/icon-website.f43fad56.svg",
     "static/media/icon-moon.049cb540.svg": "/githubUserSearch/static/media/icon-moon.049cb540.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.ee4b813c.js",
     "static/js/2.39a80194.chunk.js",
-    "static/css/main.ce8f33fd.chunk.css",
+    "static/css/main.34b520f7.chunk.css",
     "static/js/main.07347733.chunk.js"
   ]
 }
