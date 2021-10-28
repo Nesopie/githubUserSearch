@@ -171,6 +171,10 @@ button:hover {
     color: #0079ff;
 }
 
+#dateOfJoin {
+    color: var(--font-color2);
+}
+
 .bio {
     color: var(--font-color2);
 }
@@ -254,6 +258,10 @@ button:hover {
         gap: 30px;
     }
 
+    .bio  {
+        color: var(--font-color2);
+    }
+
     .data {
         text-align: left;
     }
@@ -313,7 +321,7 @@ button:hover {
 
     #dateOfJoinDesktop {
         display: inline;
-        color: #697c9a;
+        color: var(--font-color2);
         font-size: 15px;
     }
 
