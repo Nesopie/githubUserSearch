@@ -1,8 +1,36 @@
+:root {
+    --card-color: #1e2a47;
+    --background-hue: #141d2f;
+    --font-color: white;
+    --font-color2: white;
+    --shadow: 0 0 0 0;
+}
+
+[data-theme='light'] {
+    --card-color: #fefefe;
+    --background-hue: #f6f8ff;
+    --font-color: black;
+    --font-color2: #697c9a;
+    --shadow: 0 0 20px 20px rgba(70,88,109,0.15);
+}
+
+[data-theme='dark'] {
+    --card-color: #1e2a47;
+    --background-hue: #141d2f;
+    --font-color: white;
+    --font-color2: white;
+    --shadow: 0 0 0 0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+html {
+    color: white;
+}
 
 body {
     margin: 0;
-    background-color: #141d2f;
+    background-color: var(--background-hue);
     font-family: "Space Mono";
 }
 
@@ -17,7 +45,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    color: white;
+    color: var(--font-color);
 }
 
 .title {
@@ -31,6 +59,10 @@ header {
     gap: 10px;
 }
 
+.preferenceIcon:hover {
+    cursor: pointer;
+}
+
 .search {
     display: flex;
     flex-grow: 2;
@@ -38,12 +70,13 @@ header {
 
 form {
     display: flex;
-    background-color: #1e2a47;
+    background-color: var(--card-color);
     justify-content: space-between;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
     margin-bottom: 20px;
     height: 50px;
+    box-shadow: var(--shadow);
 }
 
 input {
@@ -53,13 +86,13 @@ input {
     border: none;
     outline: none;
     width: 100%;
-    color: white;
+    color: var(--font-color);
     font-size: 13px;
     font-family: "Space Mono";
 }
 
 input::placeholder {
-    color: white;
+    color: var(--font-color);
     font-weight: 400;
 }
 
@@ -99,7 +132,7 @@ button:hover {
 
 .card {
     display: flex;
-    background-color: #1e2a47;
+    background-color: var(--card-color);
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
@@ -129,6 +162,7 @@ button:hover {
 }
 
 #profileName {
+    color: var(--font-color);
     font-size: 18px;
     font-weight: 700;
 }
@@ -145,7 +179,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #141d2f;
+    background-color: var(--background-hue);
     border-radius: 10px;
     padding: 20px;
 }
@@ -154,18 +188,21 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: var(--font-color2);
 }
 
 .data {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
+    color: var(--font-color);
 }
 
 .detailContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: var(--font-color2);
 }
 
 .desktopProfilePicture, #dateOfJoinDesktop {
@@ -243,10 +280,11 @@ button:hover {
     .cardContainer {
         display: grid;
         grid-template-columns: 1fr 4fr;
-        background-color: #1e2a47;
+        background-color: var(--card-color);
         padding: 35px;
         border-radius: 10px;
         grid-gap: 20px;
+        box-shadow: var(--shadow);
     }
 
     .introContainer {
