@@ -172,7 +172,7 @@ button:hover {
 }
 
 .bio {
-    color: #f6f8ff;
+    color: var(--font-color2);
 }
 
 .aboutContainer {
